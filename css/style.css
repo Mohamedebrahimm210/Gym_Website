@@ -407,26 +407,27 @@ header nav ul li i:hover{
     width: 50%;
     background-image: url("../images/contact-img.jpg");
     background-size: cover;
-    /* height: 100vh; */
 }
 
 .contact-us .contact {
-    display: flex;
-    align-items: center;
     margin-left: 25px;
     width: 50%;
     padding: 20px 0;
 }
 @media (max-width:768px) {
     .contact-us{
-    padding: 50px 0;
-    }
-    .contact-us .contact{
-        width: 100%;
+        display: block;
+        padding: 50px 0;
     }
     .contact-us .image{
         display: none;
     }
+    .contact-us .contact{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
     .contact-us .contact div{
         width: 100%;
     }
